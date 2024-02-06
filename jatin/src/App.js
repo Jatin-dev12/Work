@@ -1,9 +1,10 @@
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter , Routes , Route } from 'react-router-dom';
-import Home from '../'
-
+import Home from './Pages/Home'
+import Work from './Pages/Work'
+import List from './Pages/List'
+import Layout from './Layout';
 
 function App() {
   return (
@@ -14,9 +15,8 @@ function App() {
       
       <Route path="/" element={<Layout />}>
         <Route index element={<Home/>} />
-        <Route path="services" element={<Services />} />
-        <Route path="Portfolio" element={<Portfolio/>} />
-        <Route path="About" element={<About />} />
+        <Route path="Work" element={<Work />} />
+        <Route path="List" element={<List/>} />
         {/* <Route path="contact" element={<Contact />} /> */}
       </Route>
     

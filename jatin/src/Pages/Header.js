@@ -4,17 +4,20 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import pic from '../Pages/js.png';
+import '../App.css'
 
 
 function Header() {
   return (
     
-    <Navbar expand="xl">
+    <Navbar expand="xl" className="bg-body-tertiary">
+    
     <Container className="">
     <Navbar.Brand href="#home">
             <img
               src={pic}             
-              width="110px"
+              width="80"
+              height="80"
               className="d-inline-block align-top"
               alt="React Bootstrap logo"
             />
